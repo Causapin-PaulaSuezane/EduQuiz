@@ -1,4 +1,0 @@
-package Users;
-class Teacher{
-    
-}
