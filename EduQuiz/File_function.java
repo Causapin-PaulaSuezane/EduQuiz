@@ -37,8 +37,6 @@ public class File_function {
                         storedPassword = part.substring("Password: ".length());
                     }
                 }
-
-                // Check if the stored username and password match the input
                 if (username.equals(storedUsername) && password.equals(storedPassword)) {
                     return true; 
                 }
