@@ -1,3 +1,3 @@
-# EduQuiz - Interactive Quiz Console Application
+# EduQuiz - Interactive  Console  Quiz Application
 
-**📝EduQuiz** is a Java Console Application that allows **teachers** to create interactive quizzes, while **students** can take quizzes at their convinience, anytime and anywhere. The console is designed to improve knowledge retention abd enhance learning experiences.
+**📝 EduQuiz** is a simple, text-based **Java console application** designed to enhance learning through interactive quizzes. Teachers can create quizzes for their students, and students can take quizzes at any time, from anywhere, all within a command-line interface.
