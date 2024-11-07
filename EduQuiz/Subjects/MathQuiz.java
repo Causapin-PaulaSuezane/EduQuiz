@@ -1,4 +1,0 @@
-package Subjects;
-class MathQuiz{
-    
-}

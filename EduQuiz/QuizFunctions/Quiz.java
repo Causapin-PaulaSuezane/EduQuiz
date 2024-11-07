@@ -1,4 +1,0 @@
-package QuizFunctions;
-class QuizAnswers{
-
-}
