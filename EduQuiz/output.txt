@@ -1,3 +1,1 @@
-
-ID: 0001, Role: Student, Username: pola, Password: 123, Full Name: pola yuyen, Subject: math
-ID: 0002, Role: Teacher, Username: lola, Password: 456, Full Name: momo lola, Subject: science
+ID: 0001, Role: Student, Username: 12, Password: 12, Full Name: 12, Subject: 12

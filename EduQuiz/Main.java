@@ -10,19 +10,21 @@ public class Main{
     	Scanner scanner = new Scanner(System.in);
 
         while(true){ 
-            System.out.println("\n1. Sign Up");
-            System.out.println("2. Login");
-            System.out.println("3. Exit");
+            System.out.println("\n=========================================");
+            System.out.println("\tHi! Welcome to EduQuiz!");
+            System.out.println("\n\t1. Sign Up");
+            System.out.println("\t2. Login");
+            System.out.println("\t3. Exit");
             System.out.print("Enter choice : ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
             switch (choice) {
                 case 1:
-                    Register_functions.signUp(scanner, admins, teachers, students);
+                    RegisterFunction.signUp(scanner, admins, teachers, students);
                     break;
                 case 2:
-                    Register_functions.login(scanner);
+                    RegisterFunction.login(scanner);
                     break;
                 case 3:
                     System.exit(0);
