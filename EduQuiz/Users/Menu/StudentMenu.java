@@ -8,6 +8,7 @@ import Users.Student;
 
 public class StudentMenu {
 
+    //student menu
     public static void showMenu(Student student, Scanner scanner) {
         boolean isRunning = true;
 

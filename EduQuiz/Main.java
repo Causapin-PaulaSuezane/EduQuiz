@@ -32,6 +32,10 @@ public class Main {
                         RegisterFunction.login(scanner, users);
                         break;
                     case 3:
+                        System.out.println("\n\t Exiting program....");
+                        System.out.println("\t\t\t Goodbye!");
+                        System.out.println("\t\t\t\t :) ");
+                        System.out.println("\n\n\n\n ");
                         System.exit(0);
                     default:
                         System.out.println("Invalid choice. Please try again.");

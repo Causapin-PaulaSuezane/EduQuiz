@@ -70,15 +70,15 @@ public class RegisterFunction {
 
         String fullname = QuizUtils.getValidatedInput(scanner, "Enter full name: ");// used a method so user will not proceed if there are no typings
 
-        // Subject selection
+         // ===================== SUBJECT SELECTION =======================================
         ArrayList<String> selectedSubjects = new ArrayList<>(); // arraylist for selected subject of the current user
 
         while (true) {
-            System.out.println("\nChoose your number of subject(s) (you can select more than one by separating with commas):");
+            System.out.println("\nChoose your number of subject(s) (you can select more than one by separating a comma in between {e.g. 1,2}):");
             System.out.println("\t(1) Math");
             System.out.println("\t(2) Science");
             System.out.println("\t(3) History");
-            System.out.print("\nEnter the numbers corresponding to your subjects: ");
+            System.out.print("\nEnter the numbers corresponding to your chosen subject/s: ");
             
             String subjectChoices = scanner.nextLine(); // Stirng as input will may include comma if user selected > 1 subject
             
@@ -95,11 +95,13 @@ public class RegisterFunction {
             }
         }
 
+        System.out.println("\n\nSelected subjects: " + selectedSubjects);
+        
         // Register user according to role
         registerToRole(role, username, password, fullname, selectedSubjects, users);
     }
 
-    // Method for user login process
+     // ===================== LOG IN METHOD =======================================
     public static void login(Scanner scanner, ArrayList<User> users) {
         System.out.println("\n=========================================");
         System.out.println("\nLet's Log you in! (type \"back\" to go back to Main Menu.)");
@@ -145,6 +147,13 @@ public class RegisterFunction {
 
         for (String choice : choices) {
             choice = choice.trim(); // Removes spaces at both ends
+
+             // Skip empty or invalid input
+            if (choice.isEmpty() || !choice.matches("\\d+")) { 
+                allValid = false; // Mark as invalid if not a number
+                continue;
+            }
+
             switch (choice) {
                 case "1":
                     selectedSubjects.add("Math");
@@ -157,10 +166,9 @@ public class RegisterFunction {
                     break;
                 default:
                     allValid = false; // false if choices are invalid
-                    System.out.println("Invalid choice: " + choice);
             }
         }
-        return allValid; // return true if all choices are valid
+        return allValid && !selectedSubjects.isEmpty(); // return true if all choices are valid and ensuring that atleast one subjcet is selected
     }
 
     // Register user to the selected role

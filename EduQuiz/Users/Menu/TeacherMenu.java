@@ -9,6 +9,7 @@ import Users.Teacher;
 
 public class TeacherMenu {
     
+    // teacher menu
     public static void showMenu(Teacher teacher, Scanner scanner) {
         boolean isRunning = true;
 
@@ -39,7 +40,7 @@ public class TeacherMenu {
                         break;
                     
                     case 4:
-                        System.out.println("You have been logged out.");
+                        System.out.println("\n\t**** You have been logged out. ****");
                         isRunning = false;
                         break;
                     

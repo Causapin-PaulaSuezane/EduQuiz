@@ -21,6 +21,7 @@ public class QuestionMulti {
         this.subject = subject;
     }
 
+    // Getters
     public String getQuestion() { return question; }
     public String getOptionA() { return optionA; }
     public String getOptionB() { return optionB; }
@@ -29,5 +30,5 @@ public class QuestionMulti {
     public String getCorrectAnswer() { return correctAnswer; }
     public String getCreatedBy() { return createdBy; }
     public String getSubject() { return subject; }
-    
+
 }

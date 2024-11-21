@@ -39,6 +39,7 @@ public class ScienceQuiz {
                 "Speed", "Acceleration", "Force", "Motion", "c", "System", "Science"));
     }
 
+    // so we can call out all the science questions
     public static ArrayList<QuestionMulti> getQuestions() {
         return QuizUtils.getQuestionsBySubject("Science");
     }

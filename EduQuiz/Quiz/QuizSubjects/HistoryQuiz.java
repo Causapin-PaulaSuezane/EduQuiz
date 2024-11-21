@@ -39,6 +39,7 @@ public class HistoryQuiz {
             "None of the choices", "Abstract", "Political caricature", "Visual arts", "c", "System", "History"));
     }
 
+    // so we can call out all the history questions
     public static ArrayList<QuestionMulti> getQuestions() {
         return QuizUtils.getQuestionsBySubject("History");
     }

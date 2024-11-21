@@ -16,19 +16,19 @@ public abstract class User { //parent class
     }
 
     //Getters
-    public String getUsername() {
+    public String getUsername() { //gets the username
         return username;
     }
 
-    public String getPassword() {
+    public String getPassword() { //gets the password
         return password;
     }
 
-    public String getFullname() {
+    public String getFullname() { // gets the fullname
         return fullname;
     }
 
-    public ArrayList<String> getSubjects() {
+    public ArrayList<String> getSubjects() { // for getting the subject
         return subjects;
     }
 

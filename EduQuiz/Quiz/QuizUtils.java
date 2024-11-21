@@ -76,14 +76,14 @@ public class QuizUtils {
 
     // Get teacher-created questions
     public static ArrayList<QuestionMulti> getTeacherQuestions(Teacher teacher, String subject) {
-        ArrayList<QuestionMulti> filteredQuestions = getQuestionsBySubject(subject);
-        ArrayList<QuestionMulti> teacherQuestions = new ArrayList<>();
-        for (QuestionMulti question : filteredQuestions) {
-            if (question.getCreatedBy().equalsIgnoreCase(teacher.getFullname())) {
-                teacherQuestions.add(question);
+        ArrayList<QuestionMulti> filteredQuestions = getQuestionsBySubject(subject); // fetches the questions in the selected subject
+        ArrayList<QuestionMulti> teacherQuestions = new ArrayList<>(); // creates an array list for teacher-created question
+        for (QuestionMulti question : filteredQuestions) { // an iterartion that will filter out the teacher-created questions from all the existing questions in the subject
+            if (question.getCreatedBy().equalsIgnoreCase(teacher.getFullname())) { //gets the questions that is created by the current teacher
+                teacherQuestions.add(question); // adds the fetched question in the arraylist of the teacherQuestions
             }
         }
-        return teacherQuestions;
+        return teacherQuestions; // returns all the fetched teacher-created questions
     }
 
     // Display questions
@@ -105,6 +105,7 @@ public class QuizUtils {
         return subject;
     }
 
+    //validates if the user entered nothing
     public static String getValidatedInput(Scanner scanner, String prompt) {
         String input;
         while (true) {

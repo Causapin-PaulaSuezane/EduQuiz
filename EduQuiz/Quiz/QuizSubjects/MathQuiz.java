@@ -39,6 +39,7 @@ public class MathQuiz {
                 "45", "48", "37", "9", "c", "System", "Math"));
     }
 
+    // so we can call out all the math questions
     public static ArrayList<QuestionMulti> getQuestions() {
         return QuizUtils.getQuestionsBySubject("Math");
     }
