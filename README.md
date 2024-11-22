@@ -4,7 +4,7 @@
   <a><img src="
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/EduQuiz.png" alt="EduQuiz" width="200"></a>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/EduQuiz/blob/main/EduQuiz%20logo.png" alt="EduQuiz" width="200"></a>
   <br>
   EduQuiz📝
   <br>
