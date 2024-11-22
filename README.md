@@ -4,7 +4,7 @@
   <a><img src="
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/EduQuiz/blob/main/EduQuiz%20logo.png" alt="EduQuiz" width="200"></a>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/EduQuiz/blob/main/EduQuiz%20logo.png" alt="EduQuiz" width="300"></a>
   <br>
   EduQuiz📝
   <br>
@@ -279,4 +279,13 @@ Here's how it integrates SDG 4📄✏️
 
 
 
-
+<p align="center">
+<br>
+<br>
+<br>
+<br>.
+<br>.
+<br>.
+<br>≽^•⩊•^≼
+  
+</p>
