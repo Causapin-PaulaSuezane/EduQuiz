@@ -127,7 +127,7 @@ Here's how it integrates SDG 4📄✏️
 2. **Student Menu**:
   <br> Options include:
    - **Take a Quiz**: Choose a subject you are registered in and answer the questions. Your scores will be updated to your student profile.
-   - **View Profile**: See your name, ID, and quiz performance.
+   - **View Profile**: See your name and quiz performance.
    - **Log out**: Return to the main menu after completing your actions.
 
 #### For Teachers 👩‍🏫
