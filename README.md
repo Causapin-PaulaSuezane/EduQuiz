@@ -56,9 +56,39 @@ EduQuiz📝 is a fun, interactive console-based quiz application designed with a
 ## II. OOP Principles 🧑‍💻
 
 ### 1. **Encapsulation** 🔒
+  - Used in the `User class`, `Student class`, and `Teacher class` with `priavte attributes` and `public getters and setter`.
+    
+  - Each quiz class (e.g.,` MathQuiz`, `ScienceQuiz`, `HistoryQuiz`) encapsulates its questions, answers, and correct answer validations.
+    
+  - Class `QuestionMulti` also uses `encapsulation` as it all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods`, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
+    
+#### **Private Attributes**
+  - User details like `fullname`, `username`, `password`, `role` and `quiz data` are declared as **private** in their respective classes, preventing unauthorized access or modification.
+  - `Question Multi` class' private attributes are `question`, `optionA`, `optionB`, `optionC`, `optionD`, `correctAnswer`, `createdBy`, and `subject`.
+    
+#### **Public Getters and Setter**
+  - **Methods like :**
+  - `getUsername()` - to retrieve user's `username`
+  - `getPassword()` - to retrieve user's `password`
+  - `getFullname()` - to retrieve user's `full name`
+  - `getRole()` - to retrive the `role` chosen by the user
+  - `getSubjects()` - to retrieve user's chosen `subject`
+  - `getScores()` - to retrieve the student's `score`
+  - `setScore(int subjectIndex, int score)` - to set tbe student's `score`
+  - `getQuestion()` - to retrieve the stored `quiz questions`
+  - `getOptionA()`, `getOptionB()`, `getOptionC()`, `getOptionD()` - retrives the `options` in the multiple choice quiz
+  - `getCorrectAnswer()` - retrieves the `correct answer` in a quiz
+  - `getCreatedBy()` - retrieves the `creator` of the quiz question
+
 
 ### 2. **Inheritance** 🌳  
+  - Used mainly in the `User class`, `Student class`, and `Teacher class` where `User` is the parent class and `Student` and `Teacher` are the child classes.
+#### **Child Classes (Student, Teacher) :** 
+  - `Student` : attributes like `username`, `password`, `fullname`, and `subjects` from the parent class `User` and an attribute like `score` that is unique only to the student chile class.
+  - `Teacher` : same as the student's classes from the parent class `User`.
+    
 ### 3. **Polymorphism** 🔄
+
 ### 4. **Abstraction** 🖼
 
 ---
