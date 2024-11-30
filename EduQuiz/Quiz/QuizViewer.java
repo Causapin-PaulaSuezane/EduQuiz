@@ -69,7 +69,7 @@ public class QuizViewer {
     public static void viewAllQuestions(Teacher teacher, Scanner scanner) {
 
         System.out.println("Available subjects: " + teacher.getSubjects()); //displays the subject that the current teacher is registered for
-        String subject = QuizUtils.getValidatedInput(scanner, "Type your registered subject to view all questions: ")
+        String subject = QuizUtils.getEmptyInput(scanner, "Type your registered subject to view all questions: ")
                     .toLowerCase() //lowercases the input of the current user
                     .replaceAll("\\s+", ""); //removes all whitespaces in the input of the current user
 

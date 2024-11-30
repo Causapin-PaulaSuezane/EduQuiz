@@ -27,7 +27,7 @@ public class QuizUtils {
         }
     }
 
-    // Add a new question to the relevant subject's question list
+    // Adds question to the relevant subject's question list
     public static void addQuestion(String subject, QuestionMulti question) {
         switch (subject.toLowerCase()) { 
             case "science":
@@ -101,12 +101,12 @@ public class QuizUtils {
     // Prompt for subject input
     public static String promptForSubject(Teacher teacher, Scanner scanner) {
         System.out.println("Available subjects: " + teacher.getSubjects());
-        String subject = getValidatedInput( scanner, "Enter subject: ").toLowerCase().replaceAll("\\s+", "");
+        String subject = getEmptyInput( scanner, "Enter subject: ").toLowerCase().replaceAll("\\s+", "");
         return subject;
     }
 
     //validates if the user entered nothing
-    public static String getValidatedInput(Scanner scanner, String prompt) {
+    public static String getEmptyInput(Scanner scanner, String prompt) {
         String input;
         while (true) {
             System.out.print(prompt);

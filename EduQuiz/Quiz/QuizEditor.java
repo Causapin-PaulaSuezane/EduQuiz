@@ -31,7 +31,7 @@ public class QuizEditor {
                         break;
     
                     case 2:
-                        QuizEditor.deleteQuestion(teacher, scanner);
+                        QuizEditor.removeQuestion(teacher, scanner);
                         break;
     
                     case 3:
@@ -48,7 +48,7 @@ public class QuizEditor {
         }
     }
 
-    // method that adds a question in a selected subject
+    // method that adds a question in a selected subject --FOR TEACHER CREATED QUESTIONS
     public static void addQuestion(Teacher teacher, Scanner scanner) {
 
         String subject = QuizUtils.promptForSubject(teacher, scanner); // prompts which subject to add a question to
@@ -61,11 +61,11 @@ public class QuizEditor {
         }
 
         // once subject is valid, proceed here
-        String questionText = QuizUtils.getValidatedInput(scanner, "Enter question text: ");
-        String optionA = QuizUtils.getValidatedInput(scanner, "Enter option A: ");
-        String optionB = QuizUtils.getValidatedInput(scanner, "Enter option B: ");
-        String optionC = QuizUtils.getValidatedInput(scanner, "Enter option C: ");
-        String optionD = QuizUtils.getValidatedInput(scanner, "Enter option D: ");
+        String questionText = QuizUtils.getEmptyInput(scanner, "Enter question text: ");
+        String optionA = QuizUtils.getEmptyInput(scanner, "Enter option A: ");
+        String optionB = QuizUtils.getEmptyInput(scanner, "Enter option B: ");
+        String optionC = QuizUtils.getEmptyInput(scanner, "Enter option C: ");
+        String optionD = QuizUtils.getEmptyInput(scanner, "Enter option D: ");
     
         String correctAnswer;
         
@@ -87,7 +87,7 @@ public class QuizEditor {
 
 
     // method to delete a selected question
-    public static void deleteQuestion(Teacher teacher, Scanner scanner) {
+    public static void removeQuestion(Teacher teacher, Scanner scanner) {
 
         String subject = QuizUtils.promptForSubject(teacher, scanner); // prompts the user to enter subject
 

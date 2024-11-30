@@ -54,7 +54,7 @@ public class RegisterFunction {
 
         while (true) {
             System.out.println("\n(type \"back\" now to go back to Main Menu.)");
-            username = QuizUtils.getValidatedInput(scanner, "Enter username: "); // Uses a method that prevents the user to proceed with no typings
+            username = QuizUtils.getEmptyInput(scanner, "Enter username: "); // Uses a method that prevents the user to proceed with no typings
 
             if (isUsernameTaken(username, users)) { // Checks if username is already taken
                 System.out.println("Sorry, username already exists. Please try again."); // if taken, will loop until username is accepted
@@ -66,9 +66,9 @@ public class RegisterFunction {
             }
         }
         
-        String password = QuizUtils.getValidatedInput(scanner, "Enter password: "); // used a method so user will not proceed if there are no typings
+        String password = QuizUtils.getEmptyInput(scanner, "Enter password: "); // used a method so user will not proceed if there are no typings
 
-        String fullname = QuizUtils.getValidatedInput(scanner, "Enter full name: ");// used a method so user will not proceed if there are no typings
+        String fullname = QuizUtils.getEmptyInput(scanner, "Enter full name: ");// used a method so user will not proceed if there are no typings
 
          // ===================== SUBJECT SELECTION =======================================
         ArrayList<String> selectedSubjects = new ArrayList<>(); // arraylist for selected subject of the current user
@@ -109,7 +109,7 @@ public class RegisterFunction {
         String username;
 
         while (true) {
-            username = QuizUtils.getValidatedInput(scanner, "\nEnter username: "); // used a method so user will not proceed if there are no typings
+            username = QuizUtils.getEmptyInput(scanner, "\nEnter username: "); // used a method so user will not proceed if there are no typings
 
             // back option if user wants to go back to previous menu
             if (username.replaceAll("\\s+", "").equalsIgnoreCase("back")) { // checks if user typed "back" while also lowering its case and removing whitespaces
@@ -119,7 +119,7 @@ public class RegisterFunction {
             break; // Valid username, proceed to passwowrd
         }
 
-        String password = QuizUtils.getValidatedInput(scanner, "Enter password: "); // used a method so user will not proceed if there are no typings
+        String password = QuizUtils.getEmptyInput(scanner, "Enter password: "); // used a method so user will not proceed if there are no typings
 
         User user = findUser(username, password, users); // User (class), user (variable) = findUser (method that loops through the users arraylist to find a matched username and password that is currently typed in the within the login metjod)
 
