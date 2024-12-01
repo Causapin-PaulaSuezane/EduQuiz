@@ -61,8 +61,6 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
 
   - Used in the `User class`, `Student class`, and `Teacher class` with `priavte attributes` and `public getters and setter`.
     
-  - Each quiz class (e.g.,` MathQuiz`, `ScienceQuiz`, `HistoryQuiz`) encapsulates its questions, answers, and correct answer validations.
-    
   - Class `QuestionMulti` also uses `encapsulation` as it stores all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods`, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
     
 #### **Private Attributes** 🔒
