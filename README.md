@@ -33,17 +33,17 @@
 
 ## Features ✨
 
-* 📝 Interactive Quizzes: Students can attempt multiple-choice quizzes in various subjects.
+* 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
-* 👨‍🏫 Teacher Functionality: Teachers can create, view, and edit quiz questions.
+* 👨‍🏫 Teacher Functionality : Teachers can create, view, and edit quiz questions.
   
-* 👨‍🎓 Student Profiles: Students can view their profiles and track their scores.
+* 👨‍🎓 Student Profiles : Students can view their profiles and track their scores.
   
-* 🌐 Subject Selection: Students can select a subject and take quizzes specific to it.
+* 🌐 Subject Selection : Students can select a subject and take quizzes specific to it.
   
-* 🔒 User Roles: Secure login system for teachers and students.
+* 🔒 User Roles : Secure login system for teachers and students.
   
-* 🧩 OOP Principles: Implements encapsulation, inheritance, abstraction, and polymorphism for better code organization and functionality.
+* 🧩 OOP Principles : Implements encapsulation, inheritance, abstraction, and polymorphism for better code organization and functionality.
 
 ---
 
