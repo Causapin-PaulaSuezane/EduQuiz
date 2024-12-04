@@ -140,8 +140,56 @@ public class RegisterFunction {
         }
     }
 
+    public static boolean subjectCondition(String subjectChoices, ArrayList<String> selectedSubjects) {
+        String[] choices = subjectChoices.split(","); // Split input by commas
+        ArrayList<String> usedChoices = new ArrayList<>(); // Keep track of used numbers
+        boolean allValid = true; // Assume all choices are valid
+    
+        for (String choice : choices) {
+            choice = choice.trim(); // Trim spaces
+    
+            // Skip empty or invalid input
+            if (choice.isEmpty() || !choice.matches("\\d+")) {
+                allValid = false; // Mark as invalid if not a number
+                continue;
+            }
+    
+            // Check for duplicate numbers in the input
+            if (usedChoices.contains(choice)) {
+                System.out.println("Sorry, duplicate input detected: " + choice);
+                return false; // Exit immediately if duplicate is found
+            }
+    
+            usedChoices.add(choice); // Add the number to usedChoices
+    
+            String subject = ""; // Initialize subject name
+            switch (choice) {
+                case "1":
+                    subject = "Math";
+                    break;
+                case "2":
+                    subject = "Science";
+                    break;
+                case "3":
+                    subject = "History";
+                    break;
+                default:
+                    allValid = false; // Invalid choice
+            }
+    
+            if (!subject.isEmpty()) {
+                selectedSubjects.add(subject); // Add subject to the list
+            }
+        }
+    
+        return allValid && !selectedSubjects.isEmpty(); // Return true if all choices are valid and at least one subject is selected
+    }
+    
+
+
+
     // Helper method for subject validation and assignment
-    public static boolean subjectCondition(String subjectChoices, ArrayList<String> selectedSubjects){
+    /*public static boolean subjectCondition(String subjectChoices, ArrayList<String> selectedSubjects){
         String[] choices = subjectChoices.split(","); // gets the value of the subjectChoices, transform them into array, comma for spliting the item, and stores them at the "choices" variable
         boolean allValid = true; // assume all choices are valid
 
@@ -170,7 +218,7 @@ public class RegisterFunction {
         }
         return allValid && !selectedSubjects.isEmpty(); // return true if all choices are valid and ensuring that atleast one subjcet is selected
     }
-
+*/
     // Register user to the selected role
     public static void registerToRole(int role, String username, String password, String fullname, ArrayList<String> selectedSubjects, ArrayList<User> users) {
         User user = null; // current user is null waiting to be assigned to a role
