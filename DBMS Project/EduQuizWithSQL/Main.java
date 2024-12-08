@@ -6,7 +6,7 @@ import Register.RegisterFunction;
 import Users.User;
 
 public class Main {
-    static ArrayList<User> users = new ArrayList<>(); // creates an array list to store all the users
+    static ArrayList<User> users = new ArrayList<>(); 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -98,10 +98,10 @@ public class QuizViewer {
     //method that views all the quiz questions including the teachers' created question in the selected subject 
     public static void viewAllQuestions(Teacher teacher, Scanner scanner) {
 
-        System.out.println("Available subjects: " + teacher.getSubjects()); //displays the subject that the current teacher is registered for
+        System.out.println("Available subjects: " + teacher.getSubjects()); 
         String subject = QuizUtils.getValidatedInput(scanner, "Type your registered subject to view all questions: ")
-                    .toLowerCase() //lowercases the input of the current user
-                    .replaceAll("\\s+", ""); //removes all whitespaces in the input of the current user
+                    .toLowerCase() 
+                    .replaceAll("\\s+", ""); 
 
         // If teacher typed an unregistered subject
         if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) {

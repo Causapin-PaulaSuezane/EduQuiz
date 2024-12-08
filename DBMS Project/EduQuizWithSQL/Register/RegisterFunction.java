@@ -25,12 +25,11 @@ public class RegisterFunction {
     // Method to handle user sign up process
     public static void signUp(Scanner scanner, ArrayList<User> users) {
         int role = getRoleSelection(scanner);
-        if (role == 3) return; // Back to main menu if user selects "Back"
-
-        // User signup details
+        if (role == 3) return; 
+       
         String username = getUniqueUsername(scanner, users);
         if (username == null) {
-            return; // Exit or go back to main menu
+            return; 
         }
 
         String password = QuizUtils.getValidatedInput(scanner, "Enter password: ");
@@ -74,19 +73,19 @@ public class RegisterFunction {
                     if (rs.next()) {
                         System.out.println("\n\t**** Login successful! (Student) ****");
 
-                        // Fetch subjects for the student
+                        
                         ArrayList<String> subjects = getSubjects(username, 1, conn);
 
-                        // Create a Student object with subjects (using existing constructor)
+                        
                         Student student = new Student(
                             rs.getString("username"),
                             rs.getString("password"),
                             rs.getString("full_name"),
                             subjects,
-                            0 // Default score
+                            0 
                         );
 
-                        // Pass student object to menu
+                       
                         StudentMenu.showMenu(student, scanner);
                         return;
                     }
@@ -102,11 +101,9 @@ public class RegisterFunction {
                 try (ResultSet rs = stmt.executeQuery()) {
                     if (rs.next()) {
                         System.out.println("\n\t**** Login successful! (Teacher) ****");
-
-                        // Fetch subjects for the teacher
+                        
                         ArrayList<String> subjects = getSubjects(username, 2, conn);
 
-                        // Create a Teacher object with subjects (using existing constructor)
                         Teacher teacher = new Teacher(
                             rs.getString("username"),
                             rs.getString("password"),
@@ -114,13 +111,12 @@ public class RegisterFunction {
                             subjects
                         );
 
-                        // Pass teacher object to menu
                         TeacherMenu.showMenu(teacher, scanner, conn);
                         return;
                     }
                 }
             }
-            // If no match found
+
             System.out.println("Invalid username or password.");
 
         } catch (Exception e) {
@@ -291,31 +287,47 @@ public class RegisterFunction {
         return selectedSubjects;
     }
 
-    // Validate and assign subjects
-    private static boolean subjectCondition(String subjectChoices, ArrayList<String> selectedSubjects) {
+    // Helper method for subject validation and assignment
+    public static boolean subjectCondition(String subjectChoices, ArrayList<String> selectedSubjects) {
         String[] choices = subjectChoices.split(",");
-        boolean allValid = true;
+        ArrayList<String> usedChoices = new ArrayList<>();
+        boolean allValid = true; 
+
         for (String choice : choices) {
-            choice = choice.trim();
+            choice = choice.trim(); 
             if (choice.isEmpty() || !choice.matches("\\d+")) {
-                allValid = false;
+                allValid = false; 
                 continue;
             }
+
+            if (usedChoices.contains(choice)) {
+                System.out.println("Sorry, duplicate input detected: " + choice);
+                return false;
+            }
+
+            usedChoices.add(choice); 
+
+            String subject = "";
             switch (choice) {
                 case "1":
-                    selectedSubjects.add("Math");
+                    subject = "Math";
                     break;
                 case "2":
-                    selectedSubjects.add("Science");
+                    subject = "Science";
                     break;
                 case "3":
-                    selectedSubjects.add("History");
+                    subject = "History";
                     break;
                 default:
-                    allValid = false;
+                    allValid = false; 
+            }
+
+            if (!subject.isEmpty()) {
+                selectedSubjects.add(subject);
             }
         }
-        return allValid && !selectedSubjects.isEmpty();
+
+        return allValid && !selectedSubjects.isEmpty(); 
     }
 
 
