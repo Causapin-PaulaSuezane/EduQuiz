@@ -15,16 +15,16 @@ public class TakeQuiz {
     // method to take quiz
     public static void takeQuiz(Student student, Scanner scanner) {
         System.out.println("\n--- Take Quiz ---\n");
-        System.out.println("Available subjects: " + student.getSubjects()); // Display subjects the student has registered for
+        System.out.println("Available subjects: " + student.getSubjects()); 
         System.out.print("Enter a subject for the quiz: ");
-        String subject = scanner.nextLine().toLowerCase().replaceAll("\\s+", ""); // .toLowerCase to turn the user input to lowercase, .replaceAll to replace all whitespaces as none
+        String subject = scanner.nextLine().toLowerCase().replaceAll("\\s+", "");
 
-        boolean subjectFound = false; //initialize that subjectFound is false
-        for (String registeredSubject : student.getSubjects()) { // iterates through the subject that the user is currently assigned in and store it in the registeredSubject variable
-            if (registeredSubject.toLowerCase().equals(subject)) { // if the value of registered subject is equals to the subject that the user typed in
-                subjectFound = true; // return true
+        boolean subjectFound = false;
+        for (String registeredSubject : student.getSubjects()) { 
+            if (registeredSubject.toLowerCase().equals(subject)) { 
+                subjectFound = true; 
                 try {
-                    TakeQuiz.startQuiz(registeredSubject, student); // Start quiz for the valid subject
+                    TakeQuiz.startQuiz(registeredSubject, student); 
                 } catch (Exception e) {
                     System.out.println("\nAn error occurred while starting the quiz. Please try again.");
                 }
@@ -32,7 +32,7 @@ public class TakeQuiz {
             }
         }
 
-        if (!subjectFound) { // if the typed subject is not found in the student.getSubjects
+        if (!subjectFound) { 
             System.out.println("\nYou are not registered for the subject '" + subject + "'. Please choose a registered subject.");
         }
     }
@@ -40,14 +40,14 @@ public class TakeQuiz {
     // method to start the quiz
     public static void startQuiz(String subject, Student student) {
 
-        ArrayList<QuestionMulti> questions = getQuizQuestions(subject); // initialize an arraylist named "question", fetches the quiz questions from the selected subject then stores the in the variable.
+        ArrayList<QuestionMulti> questions = getQuizQuestions(subject); 
 
         System.out.println("\n===================== Welcome to the " + subject + " Quiz! =====================");
         System.out.println("\nAnswer the questions below.\n");
         
-        int score = 0; // start the quiz with score of 0
+        int score = 0; 
         for (QuestionMulti question : questions) {
-            score += askQuestion(question); // adds 1 for every correct answer and retains the score for every wrong answer
+            score += askQuestion(question);
         }
 
         student.setScore(student.getSubjects().indexOf(subject), score);
@@ -65,7 +65,7 @@ public class TakeQuiz {
                 return HistoryQuiz.getQuestions();
             default:
                 System.out.println("Invalid subject.");
-                return new ArrayList<>(); // Return empty list if subject is invalid
+                return new ArrayList<>(); 
         }
     }
 
@@ -83,9 +83,9 @@ public class TakeQuiz {
             System.out.print("\nEnter your answer (a/b/c/d): ");
             userAnswer = scanner.nextLine().toLowerCase().trim();
         
-            // Check if the input is one of the valid answers
+           
             if (userAnswer.equals("a") || userAnswer.equals("b") || userAnswer.equals("c") || userAnswer.equals("d")) {
-                break; // Exit loop if valid
+                break; 
             } else {
                 System.out.println("Invalid input. Please enter 'a', 'b', 'c', or 'd'.");
             }
@@ -95,12 +95,12 @@ public class TakeQuiz {
             System.out.println("===============================");
             System.out.println("||\tCorrect answer!\t     ||");
             System.out.println("===============================\n");
-            return 1; // returns the integer 1 to the score
+            return 1;
         } else { 
             System.out.println("====================================================");
             System.out.println("||\tWrong answer. The correct answer is " + question.getCorrectAnswer() + "\t  ||");
             System.out.println("====================================================\n");
-            return 0; //returns the integer 0 to the score
+            return 0;
         }
     }
 }

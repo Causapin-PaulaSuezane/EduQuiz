@@ -43,7 +43,7 @@ public class QuizEditor {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input! Please enter a valid option.");
-                scanner.nextLine(); // Clear the invalid input
+                scanner.nextLine(); 
             }
         }
     }
@@ -51,10 +51,10 @@ public class QuizEditor {
     // method that adds a question in a selected subject --FOR TEACHER CREATED QUESTIONS
     public static void addQuestion(Teacher teacher, Scanner scanner) {
 
-        String subject = QuizUtils.promptForSubject(teacher, scanner); // prompts which subject to add a question to
-        System.out.println(""); // newline
+        String subject = QuizUtils.promptForSubject(teacher, scanner); 
+        System.out.println("");
 
-        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { // if teacher is not registered to the selevted subject
+        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { 
             System.out.println("\nUnregistered subject. Please enter a subject you are registered for: " + teacher.getSubjects());
             System.out.println("Going back.....");
             return;
@@ -80,8 +80,8 @@ public class QuizEditor {
             }
         }
 
-        QuestionMulti question = new QuestionMulti(questionText, optionA, optionB, optionC, optionD, correctAnswer, teacher.getFullname(), subject); // creates a new questio with the created method type
-        QuizUtils.addQuestion(subject, question); // adds the current teacher-created question to the selected subject using a method in the QuizUtils class
+        QuestionMulti question = new QuestionMulti(questionText, optionA, optionB, optionC, optionD, correctAnswer, teacher.getFullname(), subject); 
+        QuizUtils.addQuestion(subject, question); 
         System.out.println("\n\t**** Question added by " + teacher.getFullname() + " to subject " + subject + ". ****");
     }
 
@@ -89,21 +89,21 @@ public class QuizEditor {
     // method to delete a selected question
     public static void removeQuestion(Teacher teacher, Scanner scanner) {
 
-        String subject = QuizUtils.promptForSubject(teacher, scanner); // prompts the user to enter subject
+        String subject = QuizUtils.promptForSubject(teacher, scanner); 
 
-        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { // if current user is not registered to the selected subject
+        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { 
             System.out.println("\nUnregistered subject. Please enter a subject you are registered for: " + teacher.getSubjects());
             System.out.println("Going back.....");
             return;
         }
 
-        ArrayList<QuestionMulti> teacherQuestions = QuizUtils.getTeacherQuestions(teacher, subject); // fetches the questions created by the current teacher
+        ArrayList<QuestionMulti> teacherQuestions = QuizUtils.getTeacherQuestions(teacher, subject); 
         
         System.out.print("\n\t---- Here are your Question/s ----\n ");
 
-        QuizUtils.displayQuestions(teacherQuestions); // displays the fetched questions
+        QuizUtils.displayQuestions(teacherQuestions); 
 
-        if (!teacherQuestions.isEmpty()) { // if teacher's question is not empty
+        if (!teacherQuestions.isEmpty()) { 
             System.out.print("\n(type any key to go back)\n");
             System.out.print("Enter the number of the question to delete: ");
 
@@ -111,14 +111,14 @@ public class QuizEditor {
                 int questionIndex = scanner.nextInt();
                 scanner.nextLine();
 
-                if (questionIndex > 0 && questionIndex <= teacherQuestions.size()) { // a limit so if user typed an invalid number compared to the number of choices
-                    QuizUtils.removeQuestion(teacherQuestions.get(questionIndex - 1)); // if user typed a valid number, itll get the selected question then deletes it
-                    System.out.println("\n\t**** Question deleted. ****"); // successfully deleted
+                if (questionIndex > 0 && questionIndex <= teacherQuestions.size()) { 
+                    QuizUtils.removeQuestion(teacherQuestions.get(questionIndex - 1));
+                    System.out.println("\n\t**** Question deleted. ****"); 
                 } else {
-                    System.out.println("Invalid choice. Going back..."); // the number input is not withing the choices
+                    System.out.println("Invalid choice. Going back..."); 
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Going back..."); // mismatch.. typing a charcter instead of an integer
+                System.out.println("Invalid input. Going back..."); 
                 scanner.nextLine();
             }
         }

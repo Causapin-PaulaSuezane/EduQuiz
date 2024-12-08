@@ -16,28 +16,28 @@ public abstract class User { //parent class
     }
 
     //Getters
-    public String getUsername() { //gets the username
+    public String getUsername() { 
         return username;
     }
 
-    public String getPassword() { //gets the password
+    public String getPassword() { 
         return password;
     }
 
-    public String getFullname() { // gets the fullname
+    public String getFullname() { 
         return fullname;
     }
 
-    public ArrayList<String> getSubjects() { // for getting the subject
+    public ArrayList<String> getSubjects() { 
         return subjects;
     }
 
     // for polymorphism (overriding)
-    public abstract void register(ArrayList<User> users); // will be overriden in the child class
+    public abstract void register(ArrayList<User> users); 
 
-    public abstract String getRole();   // will be overriden in the child class
+    public abstract String getRole();   
 
-    public void viewProfile() {         // will be overriden in the child class
+    public void viewProfile() {         
         System.out.println("\n--- User Profile ---\n");
         System.out.println("Name: " + fullname);
         System.out.println("Subjects: " + subjects);
@@ -46,4 +46,3 @@ public abstract class User { //parent class
     public abstract void displayRole();
 }
 
-// can be used for polymorphism (overriding), used for inheritance and also uses encapsulation

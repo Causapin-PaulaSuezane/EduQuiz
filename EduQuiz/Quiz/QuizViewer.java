@@ -52,7 +52,7 @@ public class QuizViewer {
     //view the current teacher's created question/s
     public static void viewMyQuiz(Teacher teacher, Scanner scanner) {
 
-        String subject = QuizUtils.promptForSubject(teacher, scanner); // a method that prompts the teacher to type her selected subject
+        String subject = QuizUtils.promptForSubject(teacher, scanner);
 
         if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) {
             System.out.println("\nUnregistered subject. Please enter a subject you are registered for: " + teacher.getSubjects());
@@ -62,21 +62,21 @@ public class QuizViewer {
 
         System.out.print("\n\t---- Here are your Question/s ----\n\n ");
 
-        QuizUtils.displayQuestions(QuizUtils.getTeacherQuestions(teacher, subject)); // displays the the fethced questions that the current teacher has created
+        QuizUtils.displayQuestions(QuizUtils.getTeacherQuestions(teacher, subject)); 
     }
 
     //method that views all the quiz questions including the teachers' created question in the selected subject 
     public static void viewAllQuestions(Teacher teacher, Scanner scanner) {
 
-        System.out.println("Available subjects: " + teacher.getSubjects()); //displays the subject that the current teacher is registered for
+        System.out.println("Available subjects: " + teacher.getSubjects());
         String subject = QuizUtils.getEmptyInput(scanner, "Type your registered subject to view all questions: ")
-                    .toLowerCase() //lowercases the input of the current user
-                    .replaceAll("\\s+", ""); //removes all whitespaces in the input of the current user
+                    .toLowerCase() 
+                    .replaceAll("\\s+", ""); 
 
         // If teacher typed an unregistered subject
         if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) {
             System.out.println("\nYou are not registered for the subject '" + subject + "'. Please choose a registered subject.");
-            return; //back to the previous menu
+            return; 
         }
 
         // Get all questions for the subject
@@ -84,6 +84,6 @@ public class QuizViewer {
         
         System.out.println("\n--- All Questions for Subject: " + subject + " ---\n");
         System.out.println("----------------------------\n");
-        QuizUtils.displayQuestions(questions); // displays the question
+        QuizUtils.displayQuestions(questions); 
     }
 }

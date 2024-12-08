@@ -23,7 +23,7 @@ public class QuizUtils {
                 return historyQuestions;
             default:
                 System.out.println("No questions found for subject: " + subject);
-                return new ArrayList<>(); // Return empty list if there is no questiosn
+                return new ArrayList<>(); 
         }
     }
 
@@ -40,7 +40,7 @@ public class QuizUtils {
                 historyQuestions.add(question);
                 break;
             default:
-                System.out.println("Invalid subject: " + subject); // Handle invalid subject
+                System.out.println("Invalid subject: " + subject); 
         }
     }
 
@@ -57,7 +57,7 @@ public class QuizUtils {
                 historyQuestions.remove(question);
                 break;
             default:
-                System.out.println("Invalid subject");  // Handle invalid subject
+                System.out.println("Invalid subject"); 
         }
     }
 
@@ -76,14 +76,14 @@ public class QuizUtils {
 
     // Get teacher-created questions
     public static ArrayList<QuestionMulti> getTeacherQuestions(Teacher teacher, String subject) {
-        ArrayList<QuestionMulti> filteredQuestions = getQuestionsBySubject(subject); // fetches the questions in the selected subject
-        ArrayList<QuestionMulti> teacherQuestions = new ArrayList<>(); // creates an array list for teacher-created question
-        for (QuestionMulti question : filteredQuestions) { // an iterartion that will filter out the teacher-created questions from all the existing questions in the subject
-            if (question.getCreatedBy().equalsIgnoreCase(teacher.getFullname())) { //gets the questions that is created by the current teacher
-                teacherQuestions.add(question); // adds the fetched question in the arraylist of the teacherQuestions
+        ArrayList<QuestionMulti> filteredQuestions = getQuestionsBySubject(subject); 
+        ArrayList<QuestionMulti> teacherQuestions = new ArrayList<>();
+        for (QuestionMulti question : filteredQuestions) { 
+            if (question.getCreatedBy().equalsIgnoreCase(teacher.getFullname())) { 
+                teacherQuestions.add(question); 
             }
         }
-        return teacherQuestions; // returns all the fetched teacher-created questions
+        return teacherQuestions; 
     }
 
     // Display questions
@@ -115,7 +115,7 @@ public class QuizUtils {
             if (input.isEmpty()) {
                 System.out.println("Input cannot be empty. Please try again.");
             } else {
-                break; // Valid input
+                break; 
             }
         }
         return input;
