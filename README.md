@@ -129,7 +129,7 @@ The **EduQuiz** project supports **SDG 4: Quality Education** by providing an in
 Here's how it integrates SDG 4📄✏️
 
 - **Inclusive Education:** The application makes it accessible to all the students irrespective of their location so that they can take quizzes at any time and anywhere. This achieves quality education for everybody. 🌏
-- Personalized Learning: Students can take quizzes on subjects they are registered for, enabling them to focus on areas they need to improve, thus supporting personalized learning paths. 📈
+- **Personalized Learning:** Students can take quizzes on subjects they are registered for, enabling them to focus on areas they need to improve, thus supporting personalized learning paths. 📈
 
 ---
 
