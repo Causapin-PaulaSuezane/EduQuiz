@@ -197,7 +197,25 @@ Here's how it integrates SDG 4📄✏️
    - **Edit Quiz Question**: Add or delete your own teacher-created questions to a subject quiz.
    - **View Quiz**: View your own created questions and view all the questions in a selected registered subject.
    - **Log out**: Return to the main menu when you're finished.
+     
+---
 
+## Important Notes 📜
+
+**For OOP**
+<br>
+Video Presentation is 10:02🕦 long
+
+Program Run is 04:16🕦 long..
+Program Run is for extra only... Its a video that shows how the EduQuiz runs. (video is in ×1.5 speed, audio is poor coz of laptop's microphone performance)
+Link : to be uploaded🚧....
+<br>
+
+**For DBMS**
+<br>
+Video Presentation is 14:13🕦 long
+Link : to be uploaded🚧....
+<br>
 
 <p align="center">
 <br>
