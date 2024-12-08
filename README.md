@@ -31,7 +31,7 @@
 
 ---
 
-## Features ✨
+# Features ✨
 
 * 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
@@ -47,13 +47,13 @@
 
 ---
 
-## I. Project Overview 🚀
+# I. Project Overview 🚀
 
 EduQuiz📝 is a fun, interactive console-based quiz application designed with a motive towards engaging and accessible learning for students. The application includes multiple subjects, such as `Math📐`, `Science🧬`, and `History𓀘`, which allows teachers to create quiz questions that can be taken by students anytime🕗 and anywhere🗺. With an accessible platform, EduQuiz aligns with Sustainable Development Goal 4 (Quality Education)💡 by promoting quality education and other focused education for all.📚🫱🏼‍🫲🏻
 
 ---
 
-## II. OOP Principles 🧑‍💻
+# II. OOP Principles 🧑‍💻
 
 ### 1. Encapsulation 🔐
 
@@ -122,7 +122,7 @@ Abstraction is the concept of hiding implementation details and exposing only th
   - `Student/Teacher Classes` : These classes provide specific implementations of the abstract methods defined in the `User class`, defining how a student or teacher registers, what their role is, and the functions associated with their roles.
 ---
 
-## III. Details of the Chosen SDG and Its Integration 🌍
+# III. Details of the Chosen SDG and Its Integration 🌍
  
 The **EduQuiz** project supports **SDG 4: Quality Education** by providing an interactive venue for students to learn and take quizzes on a wide range of subjects. It continuously motivates learners to pursue self-assessment, which is a pillar in the development of education.
 
@@ -133,7 +133,7 @@ Here's how it integrates SDG 4📄✏️
 
 ---
 
-## IV. How To Run
+# IV. How To Run
 
 ### What You'll Need :
 - Visual Studio Code (VS Code)
@@ -200,20 +200,20 @@ Here's how it integrates SDG 4📄✏️
      
 ---
 
-## Important Notes 📜
+# Important Notes 📜
 
 **For OOP**
 <br>
-Video Presentation is 10:02🕦 long
-
-Program Run is 04:16🕦 long..
-Program Run is for extra only... Its a video that shows how the EduQuiz runs. (video is in ×1.5 speed, audio is poor coz of laptop's microphone performance)
+Video Presentation is 10:02 long🕦 <br>
+Program Run is 04:16 long🕦..
+Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
+(video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
 Link : to be uploaded🚧....
 <br>
 
 **For DBMS**
 <br>
-Video Presentation is 14:13🕦 long
+Video Presentation is 14:13 long🕦 <br>
 Link : to be uploaded🚧....
 <br>
 
