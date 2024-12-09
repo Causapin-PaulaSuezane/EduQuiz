@@ -269,28 +269,26 @@ DBMS Project/
 <br>
 
 **Video Presentation** is 10:02 long🕦 <br>
-Link : [OOP Presentation Video](https://drive.google.com/file/d/1C6M1lvVm8K8vPzmlhlPA11QPynf4luhh/view?usp=drive_link)
+Link : [OOP Presentation Video](https://drive.google.com/file/d/1C6M1lvVm8K8vPzmlhlPA11QPynf4luhh/view?usp=drive_link)🔗
 
 **Program Run** is 04:16 long🕦..
 Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
 (video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
-
-Link : [Program Run](https://drive.google.com/file/d/1Dx9LuFJWQ3ihw5oHW1shQXyJjc-rAWxn/view?usp=drive_link)
+Link : [Program Run](https://drive.google.com/file/d/1Dx9LuFJWQ3ihw5oHW1shQXyJjc-rAWxn/view?usp=drive_link)🔗
 <br>
 
 ## For DBMS 📌
 <br>
 
 **Video Presentation** is 14:13 long🕦 <br>
-
-Link : [DBMS Vid Presentation](https://drive.google.com/file/d/1YhBH6poHoxx6qcL9Y2mB7SJMKArzVz2D/view?usp=drive_link)
+Link : [DBMS Vid Presentation](https://drive.google.com/file/d/1YhBH6poHoxx6qcL9Y2mB7SJMKArzVz2D/view?usp=drive_link)🔗
 <br>
 
 ---
 
 ## Full File Link 📌
 Click this 👉
-[Gdrive Link...](https://drive.google.com/drive/folders/1LiGeD7d1nJwOVQLZwjt7FYNbHlTXSUeM?usp=drive_link)
+[Gdrive Link...](https://drive.google.com/drive/folders/1LiGeD7d1nJwOVQLZwjt7FYNbHlTXSUeM?usp=drive_link)🔗
 
 <p align="center">
 <br>
