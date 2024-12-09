@@ -202,20 +202,34 @@ Here's how it integrates SDG 4📄✏️
 
 # Important Notes 📜
 
-**For OOP**
-<br>
-Video Presentation is 10:02 long🕦 <br>
-Program Run is 04:16 long🕦..
-Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
-(video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
-Link : to be uploaded🚧....
+---
+
+## For OOP 📌
 <br>
 
-**For DBMS**
+**Video Presentation** is 10:02 long🕦 <br>
+
+**Program Run** is 04:16 long🕦..
+Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
+(video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
+
+Link : [OOP Presentation Video](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj), 
+[Program Run](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj)
 <br>
-Video Presentation is 14:13 long🕦 <br>
-Link : to be uploaded🚧....
+
+## For DBMS 📌
 <br>
+
+**Video Presentation** is 14:13 long🕦 <br>
+
+Link : [click me....](https://drive.google.com/drive/u/0/folders/1xzAi6APhfzoqkZfNv7J-_WKJPM-32idd)
+<br>
+
+---
+
+## Full File Link 📌
+Click this 👉
+[Gdrive Link...](https://drive.google.com/drive/folders/1LiGeD7d1nJwOVQLZwjt7FYNbHlTXSUeM?usp=drive_link)
 
 <p align="center">
 <br>
