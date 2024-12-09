@@ -265,8 +265,6 @@ DBMS Project/
 
 # Important Notes 📜
 
----
-
 ## For OOP 📌
 <br>
 
