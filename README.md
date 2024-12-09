@@ -22,7 +22,7 @@
   <a href="#i-project-overview-">Overview</a> •
   <a href="#ii-oop-principles-">OOP Principles</a> •
   <a href="#iii-details-of-the-chosen-sdg-and-its-integration-">SDG Goal</a> •
-  <a href="#iv-how-to-run">How To Run</a> 
+  <a href="#iv-how-to-run-">How To Run</a> 
 </p>
 
 <br>
@@ -61,10 +61,10 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
 
   - Used in the `User class`, `Student class`, and `Teacher class` with `priavte attributes` and `public getters and setter`.
     
-  - Class `QuestionMulti` also uses `encapsulation` as it stores all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods`, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
+  - Class `QuestionMulti` also uses `encapsulation` as it stores all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods `, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
     
 #### **Private Attributes** 🔒
-  - User details like `fullname`, `username`, `password`, `role` and `quiz data` are declared as **private** in their respective classes, preventing unauthorized access or modification.
+  - User details like `fullname`, `username`, `password`, `role` and `quiz data ` are declared as **private** in their respective classes, preventing unauthorized access or modification.
   - `Question Multi` class' private attributes are `question`, `optionA`, `optionB`, `optionC`, `optionD`, `correctAnswer`, `createdBy`, and `subject`.
     
 #### **Public Getters and Setter** 🌎
@@ -133,7 +133,7 @@ Here's how it integrates SDG 4📄✏️
 
 ---
 
-# IV. How To Run
+# IV. How To Run 🏃
 
 ### What You'll Need :
 - Visual Studio Code (VS Code)
@@ -200,6 +200,69 @@ Here's how it integrates SDG 4📄✏️
      
 ---
 
+# File Structures 📂
+## For EduQuiz (OOP) 🧩
+```
+EduQuiz/ 
+├── Main.java 
+├── Quiz/ 
+│   ├── QuizSubjects/ 
+│   │   ├── HistoryQuiz.java
+│   │   ├── MathQuiz.java
+│   │   └── ScienceQuiz.java
+│   ├── QuestionMulti.java
+│   ├── QuizEditor.java
+│   ├── QuizUtils.java
+│   ├── QuizViewer.java
+│   └── TakeQuiz.java
+├── Register/
+│   └── RegisterFunction.java
+├── Users/
+│   ├── Menu/
+│   │   ├── StudentMenu.java
+│   │   └── TeacherMenu.java
+│   ├── Student.java
+│   ├── Teacher.java
+│   └── User.java
+```
+
+## For EduQuiz w/ MySQL (DBMS) 🐬
+```
+DBMS Project/
+└── EduQuizWithSQL/
+    ├── Main.java
+    ├── Database/
+    │   ├── DatabaseConn.java
+    │   └── QuestionDatabaseHandler.java
+    ├── Quiz/
+    │   ├── QuizSubjects/
+    │   │   ├── HistoryQuiz.java
+    │   │   ├── MathQuiz.java
+    │   │   └── ScienceQuiz.java
+    │   ├── QuestionMulti.java
+    │   ├── QuizEditor.java
+    │   ├── QuizUtils.java
+    │   ├── QuizViewer.java
+    │   └── TakeQuiz.java
+    ├── Register/
+    │   └── RegisterFunction.java
+    ├── Users/
+    │   ├── Menu/
+    │   │   ├── StudentMenu.java
+    │   │   └── TeacherMenu.java
+    │   ├── Student.java
+    │   ├── Teacher.java
+    │   └── User.java
+    ├── db/
+    │   ├── init.sql
+    │   └── schema.png
+    └── lib/
+        └── mysql-connector-j-9.1.0.jar
+
+```
+
+---
+
 # Important Notes 📜
 
 ---
@@ -208,13 +271,13 @@ Here's how it integrates SDG 4📄✏️
 <br>
 
 **Video Presentation** is 10:02 long🕦 <br>
+Link : [OOP Presentation Video](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj)
 
 **Program Run** is 04:16 long🕦..
 Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
 (video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
 
-Link : [OOP Presentation Video](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj), 
-[Program Run](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj)
+Link : [Program Run](https://drive.google.com/drive/u/0/folders/1v-6tVi3ASvn1kVuR4QthVErbsjqCwMVj)
 <br>
 
 ## For DBMS 📌
@@ -222,7 +285,7 @@ Link : [OOP Presentation Video](https://drive.google.com/drive/u/0/folders/1v-6t
 
 **Video Presentation** is 14:13 long🕦 <br>
 
-Link : [click me....](https://drive.google.com/drive/u/0/folders/1xzAi6APhfzoqkZfNv7J-_WKJPM-32idd)
+Link : [DBMS Vid Presentation](https://drive.google.com/drive/u/0/folders/1xzAi6APhfzoqkZfNv7J-_WKJPM-32idd)
 <br>
 
 ---
