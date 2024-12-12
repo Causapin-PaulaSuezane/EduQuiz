@@ -49,7 +49,23 @@
 
 # I. Project Overview 🚀
 
-EduQuiz📝 is a fun, interactive console-based quiz application designed with a motive towards engaging and accessible learning for students. The application includes multiple subjects, such as `Math📐`, `Science🧬`, and `History𓀘`, which allows teachers to create quiz questions that can be taken by students anytime🕗 and anywhere🗺. With an accessible platform, EduQuiz aligns with Sustainable Development Goal 4 (Quality Education)💡 by promoting quality education and other focused education for all.📚🫱🏼‍🫲🏻
+EduQuiz📝 is a fun, interactive console-based quiz application designed to promote engaging and accessible learning for students. It aims to support both teachers and learners in a seamless and effective way. Here's an overview of the key features:
+
+- Multiple Subjects:
+  - 📐 Math
+  - 🧬 Science
+  - 𓀘 History
+
+- Teacher-Friendly:
+  - Allows teachers to easily create quiz questions for students.
+
+- Flexible and Accessible:
+  - Students can take quizzes anytime 🕗 and anywhere 🗺.
+
+- Aligned with SDG 4 (Quality Education) 💡:
+ - Promotes quality education for all students, contributing to global educational goals.
+
+EduQuiz is designed to make learning more accessible and engaging, ensuring that education remains a lifelong pursuit for everyone. 📚🫱🏼‍🫲🏻
 
 ---
 
@@ -266,29 +282,42 @@ DBMS Project/
 # Important Notes 📜
 
 ## For OOP 📌
-<br>
+🎬**Video Presentation** is 10:02 long🕦 <br>
+🔗Link : [OOP Presentation Video](https://drive.google.com/file/d/1C6M1lvVm8K8vPzmlhlPA11QPynf4luhh/view?usp=drive_link)
 
-**Video Presentation** is 10:02 long🕦 <br>
-Link : [OOP Presentation Video](https://drive.google.com/file/d/1C6M1lvVm8K8vPzmlhlPA11QPynf4luhh/view?usp=drive_link)🔗
-
-**Program Run** is 04:16 long🕦..
+🎬**Program Run** is 04:16 long🕦..
 Program Run is for extra only... Its a video that shows how the EduQuiz runs. <br>
 (video is in ×1.5 speed, audio is poor coz of laptop's microphone performance) <br>
-Link : [Program Run](https://drive.google.com/file/d/1Dx9LuFJWQ3ihw5oHW1shQXyJjc-rAWxn/view?usp=drive_link)🔗
+🔗Link : [Program Run](https://drive.google.com/file/d/1Dx9LuFJWQ3ihw5oHW1shQXyJjc-rAWxn/view?usp=drive_link)
 <br>
 
 ## For DBMS 📌
-<br>
-
-**Video Presentation** is 14:13 long🕦 <br>
-Link : [DBMS Vid Presentation](https://drive.google.com/file/d/1YhBH6poHoxx6qcL9Y2mB7SJMKArzVz2D/view?usp=drive_link)🔗
+🎬**Video Presentation** is 14:13 long🕦 <br>
+🔗Link : [DBMS Vid Presentation](https://drive.google.com/file/d/1YhBH6poHoxx6qcL9Y2mB7SJMKArzVz2D/view?usp=drive_link)
 <br>
 
 ---
 
 ## Full File Link 📌
-Click this 👉
-[Gdrive Link...](https://drive.google.com/drive/folders/1LiGeD7d1nJwOVQLZwjt7FYNbHlTXSUeM?usp=drive_link)🔗
+📂 **Folder Contents**
+```
+**EDUQUIZ - OOP and DBMS Presentation**
+
+├── **DBMS Project - (Vid Presentation)**
+│   └── DBMS_VideoPresentation [video]
+│
+├── **OOP Project - (Vid Presentation)**
+│   ├── **OOP Presentation**
+│   │   └── OOP Presentation [video]
+│   │
+│   ├── **PPT Used**
+│   │   └── EduQuiz [ppt]
+│   │
+│   └── **Program Run**
+│       └── Program Run [video]
+
+```
+🔗link : [Gdrive Link](https://drive.google.com/drive/folders/1LiGeD7d1nJwOVQLZwjt7FYNbHlTXSUeM?usp=drive_link)
 
 <p align="center">
 <br>
