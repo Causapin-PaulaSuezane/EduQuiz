@@ -60,7 +60,7 @@ EduQuiz📝 is a fun, interactive console-based quiz application designed to pro
   - Students can take quizzes anytime 🕗 and anywhere 🗺.
 
 - Aligned with SDG 4 (Quality Education) 💡:
- - Promotes quality education for all students, contributing to global educational goals.
+  - Promotes quality education for all students, contributing to global educational goals.
 
 EduQuiz is designed to make learning more accessible and engaging, ensuring that education remains a lifelong pursuit for everyone. 📚🫱🏼‍🫲🏻
 
