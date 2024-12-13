@@ -19,7 +19,8 @@
   <a href="#i-project-overview-">Overview</a> •
   <a href="#ii-oop-principles-">OOP Principles</a> •
   <a href="#iii-details-of-the-chosen-sdg-and-its-integration-">SDG Goal</a> •
-  <a href="#iv-how-to-run-">How To Run</a> 
+  <a href="#iv-how-to-run-">How To Run</a> •
+  <a href="#important-notes-">Impotant Notes</a> 
 </p>
 
 <br>
