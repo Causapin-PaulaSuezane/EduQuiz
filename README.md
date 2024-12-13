@@ -15,11 +15,11 @@
  </p>
  
 <p align="center">
-  <a href="######features-">Features</a> •
+  <a href="#features-">Features</a> •
   <a href="#i-project-overview-">Overview</a> •
   <a href="#ii-oop-principles-">OOP Principles</a> •
   <a href="#iii-details-of-the-chosen-sdg-and-its-integration-">SDG Goal</a> •
-  <a href="######iv-how-to-run-">How To Run</a> •
+  <a href="#iv-how-to-run-">How To Run</a> •
   <a href="#important-notes-">Impotant Notes</a> 
 </p>
 
@@ -33,7 +33,7 @@
   <br>
   <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES.gif" alt="Features"></a>
   
-  ###### Features ✨
+  # Features ✨
   
 * 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
@@ -49,6 +49,10 @@
 
 ---
 
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(1).gif" alt="Project Overview"></a>
+  
 # I. Project Overview 🚀
 
 EduQuiz📝 is a fun, interactive console-based quiz application designed to promote engaging and accessible learning for students. It aims to support both teachers and learners in a seamless and effective way. Here's an overview of the key features:
@@ -70,6 +74,10 @@ EduQuiz📝 is a fun, interactive console-based quiz application designed to pro
 EduQuiz is designed to make learning more accessible and engaging, ensuring that education remains a lifelong pursuit for everyone. 📚🫱🏼‍🫲🏻
 
 ---
+
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(2).gif" alt="OOP Principles"></a>
 
 # II. OOP Principles 🧑‍💻
 
@@ -143,8 +151,13 @@ Abstraction is the concept of hiding implementation details and exposing only th
 
   - `User Class` : An abstract class that defines the structure for `register()`, `getRole()`, `displayRole()`, and `viewProfile()` methods, leaving the implementation details to the child classes.
   - `Student/Teacher Classes` : These classes provide specific implementations of the abstract methods defined in the `User class`, defining how a student or teacher registers, what their role is, and the functions associated with their roles.
+    
 ---
 
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(3).gif" alt="SDG Goals"></a>
+  
 # III. Details of the Chosen SDG and Its Integration 🌍
  
 The **EduQuiz** project supports **SDG 4: Quality Education** by providing an interactive venue for students to learn and take quizzes on a wide range of subjects. It continuously motivates learners to pursue self-assessment, which is a pillar in the development of education.
@@ -156,7 +169,11 @@ Here's how it integrates SDG 4📄✏️
 
 ---
 
-###### IV. How To Run 🏃
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(4).gif" alt="How to Run"></a>
+
+# IV. How To Run 🏃
 
 ### What You'll Need 🧰
 - Visual Studio Code (VS Code)
@@ -223,6 +240,10 @@ Here's how it integrates SDG 4📄✏️
      
 ---
 
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(5).gif" alt="File Structure"></a>
+
 # File Structures 📂
 ## For EduQuiz (OOP) 🧩
 ```
@@ -286,6 +307,10 @@ DBMS Project/
 
 ---
 
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(6).gif" alt="Important Notes"></a>
+  
 # Important Notes 📜
 
 ## For OOP 📌
