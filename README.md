@@ -29,11 +29,11 @@
 
 ---
 
+# Features ✨
+
 <h1 align="center">
   <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES.gif" alt="Features"></a>
 </h1>
-
-<h2 id="features-">✨ Features</h2>
   
 * 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
