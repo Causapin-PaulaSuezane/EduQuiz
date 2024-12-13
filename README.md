@@ -148,7 +148,7 @@ Here's how it integrates SDG 4📄✏️
 
 # IV. How To Run 🏃
 
-### What You'll Need :
+### What You'll Need 🧰
 - Visual Studio Code (VS Code)
 - Java Development Kit (JDK)
 - Java Extension Pack
