@@ -92,7 +92,34 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
     
 ### **Private Attributes** 🔒
   - User details like `fullname`, `username`, `password`, `role` and `quiz data ` are declared as **private** in their respective classes, preventing unauthorized access or modification.
+###### User.java
+```java
+    public abstract class User {
+        private String username;
+        private String password;
+        private String fullname;
+        private ArrayList<String> subjects;
+```
+
+<br>
+<br>
+    
   - `Question Multi` class' private attributes are `question`, `optionA`, `optionB`, `optionC`, `optionD`, `correctAnswer`, `createdBy`, and `subject`.
+###### QuestionMulti.java
+```java
+    public class QuestionMulti {
+        private String question;
+        private String optionA;
+        private String optionB;
+        private String optionC;
+        private String optionD;
+        private String correctAnswer;
+        private String createdBy;
+        private String subject;
+```
+
+<br>
+<br>
     
 ### **Public Getters and Setter** 🌎
   - **User-Related Getters** 👩🏻‍💻
@@ -101,16 +128,50 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
     - `getFullname()` : Retrieves the user's full name.
     - `getRole()` : Retrieves the role chosen by the user (e.g., student or teacher).
     - `getSubjects()` : Retrieves the user's chosen subject.
+###### User.java
+```java
+    public String getUsername() { return username; }
+    public String getPassword() { return password; }
+    public String getFullname() { return fullname; }
+    public ArrayList<String> getSubjects() { return subjects; }
+    public abstract String getRole();   
+```
+
+<br>
+<br>
 
   - **Student-Specific Methods** 👩🏻‍🎓
     - `getScores()` : Retrieves the student's score for all subjects.
     - `setScore(int subjectIndex, int score)` : Updates the student's score for a specific subject.
+###### Student.java
+```java
+    public ArrayList<Integer> getScores() { return scores; }
+    public void setScore(int subjectIndex, int score) { scores.set(subjectIndex, score); }
+
+```
+
+<br>
+<br>
+
 
   - **Quiz-Related Getters** ✏️
     - `getQuestion()` : Retrieves the stored quiz questions.
     - `getOptionA()`, `getOptionB()`, `getOptionC()`, `getOptionD()` : Retrieve the options for the multiple-choice quiz questions.
     - `getCorrectAnswer()` : Retrieves the correct answer for a quiz question.
     - `getCreatedBy()` : Retrieves the creator of a specific quiz question.
+###### QuestionMulti.java
+```java
+    public String getQuestion() { return question; }
+    public String getOptionA() { return optionA; }
+    public String getOptionB() { return optionB; }
+    public String getOptionC() { return optionC; }
+    public String getOptionD() { return optionD; }
+    public String getCorrectAnswer() { return correctAnswer; }
+    public String getCreatedBy() { return createdBy; }
+    public String getSubject() { return subject; }
+```
+
+<br>
 
 ---
 
@@ -121,10 +182,56 @@ Inheritance is an object-oriented programming principle where a child class inhe
 
 ### **Parent Class (User)** 👵🏼
   - `User` : common attributes like `username`, `password`, `fullname`, `subjects` were encapsulated in the parent class. These attributes represent shared properties that are inherited by specific user types, such as `Student` or `Teacher`, ensuring a consistent structure while allowing for specialized behavior in the child classes.
+###### User.java
+```java
+    public abstract class User { //parent class
+        private String username;
+        private String password;
+        private String fullname;
+        private ArrayList<String> subjects;
+
+        public User(String username, String password, String fullname, ArrayList<String> subjects) {
+            this.username = username;
+            this.password = password;
+            this.fullname = fullname;
+            this.subjects = subjects;
+        }
+```
+
+<br>
+<br>
 
 ### **Child Classes (Student, Teacher)** 👶🏼
   - `Student` : attributes like `username`, `password`, `fullname`, and `subjects`  were inherited from the parent class `User`. Additionaly, an attribute like `score` was introduced uniquely to the student chile class and not inherited from the parent class.
+###### Student.java
+```java
+    public class Student extends User { 
+
+        private ArrayList<Integer> scores;  
+
+        public Student(String username, String password, String fullname, ArrayList<String> subjects, int score) {
+            super(username, password, fullname, subjects); 
+            this.scores = new ArrayList<>(subjects.size()); 
+
+            for (int i = 0; i < subjects.size(); i++) { 
+                scores.add(0);
+            }
+        }
+    }
+```
+
+<br>
+<br>
+    
   - `Teacher` : same as the student's classes that were inherited from the parent class `User`.
+###### Teacher.java
+```java
+    public class Teacher extends User {
+
+      public Teacher(String username, String password, String fullname, ArrayList<String> subjects) {
+        super(username, password, fullname, subjects);
+    }
+```
 
 ---
     
@@ -135,15 +242,202 @@ Polymorphism is an object-oriented programming principle that allows objects of 
   - Runtime Polymorphism (Method Overriding)
 
 ### **Method Overloading** ⚡
-  - Methods like `addQuestion()` and `removeQuestion()` demonstrate method overloading. Each method name is used to edit the teacher-created questions with different parameter lists to handle different scenarios.
-      - `addQuestion()` : supports adding pre-defined questions programmatically or interactively creating questions at runtime.
-      - `removeQuestion()` : The removeQuestion methods work in tandem to delete questions. The interactive method `(removeQuestion(Teacher teacher, Scanner scanner)` allows teachers to browse through and pick out questions to remove at runtime, thus being user-friendly. While the method `(removeQuestion(QuestionMulti question)` actually deletes the question picked from the system in the background.
+Methods like `addQuestion()` and `removeQuestion()` demonstrate method overloading. Each method name is used to edit the teacher-created questions with different parameter lists to handle different scenarios.
+    
+  - `addQuestion()` : supports adding pre-defined questions programmatically or interactively creating questions at runtime.
+###### addQuestion() in the QuizUtils.java
+```java
+    public static void addQuestion(String subject, QuestionMulti question) {
+        switch (subject.toLowerCase()) { 
+            case "science":
+                scienceQuestions.add(question);
+                break;
+            case "math":
+                mathQuestions.add(question);
+                break;
+            case "history":
+                historyQuestions.add(question);
+                break;
+            default:
+                System.out.println("Invalid subject: " + subject); 
+        }
+    }
+```
+
+###### addQuestion() in the QuizEditor.java
+```java
+    public static void addQuestion(Teacher teacher, Scanner scanner) {
+        String subject = QuizUtils.promptForSubject(teacher, scanner); 
+        System.out.println("");
+
+        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { 
+            System.out.println("\nUnregistered subject. Please enter a subject you are registered for: " + teacher.getSubjects());
+            System.out.println("Going back.....");
+            return;
+        }
+
+        // once subject is valid, proceed here
+        String questionText = QuizUtils.getEmptyInput(scanner, "Enter question text: ");
+        String optionA = QuizUtils.getEmptyInput(scanner, "Enter option A: ");
+        String optionB = QuizUtils.getEmptyInput(scanner, "Enter option B: ");
+        String optionC = QuizUtils.getEmptyInput(scanner, "Enter option C: ");
+        String optionD = QuizUtils.getEmptyInput(scanner, "Enter option D: ");
+    
+        String correctAnswer;
+        
+        while (true) {
+            System.out.print("Enter correct answer (a/b/c/d): ");
+            correctAnswer = scanner.nextLine().toLowerCase().trim();
+
+             if (correctAnswer.equals("a") || correctAnswer.equals("b") || correctAnswer.equals("c") || correctAnswer.equals("d")) {
+                break;
+            } else {
+                System.out.println("\nInvalid input. Please enter only 'a', 'b', 'c', or 'd'.\n");
+            }
+        }
+
+        QuestionMulti question = new QuestionMulti(questionText, optionA, optionB, optionC, optionD, correctAnswer, teacher.getFullname(), subject); 
+        QuizUtils.addQuestion(subject, question); 
+        System.out.println("\n\t**** Question added by " + teacher.getFullname() + " to subject " + subject + ". ****");
+    }
+```
+
+<br>
+<br>
+
+   - `removeQuestion()` : The removeQuestion methods work in tandem to delete questions. The interactive method `(removeQuestion(Teacher teacher, Scanner scanner)` allows teachers to browse through and pick out questions to remove at runtime, thus being user-friendly. While the method `(removeQuestion(QuestionMulti question)` actually deletes the question picked from the system in the background.
+###### removeQuestion() in the QuizUtils.java
+```java
+    public static void removeQuestion(QuestionMulti question) {
+        switch (question.getSubject().toLowerCase())  {
+            case "science":
+                scienceQuestions.remove(question);
+                break;
+            case "math":
+                mathQuestions.remove(question);
+                break;
+            case "history":
+                historyQuestions.remove(question);
+                break;
+            default:
+                System.out.println("Invalid subject"); 
+        }
+    }
+```
+
+###### removeQuestion() in the QuizEditor.java
+```java
+    public static void removeQuestion(Teacher teacher, Scanner scanner) {
+        String subject = QuizUtils.promptForSubject(teacher, scanner); 
+
+        if (!QuizUtils.isTeacherRegisteredForSubject(teacher, subject)) { 
+            System.out.println("\nUnregistered subject. Please enter a subject you are registered for: " + teacher.getSubjects());
+            System.out.println("Going back.....");
+            return;
+        }
+
+        ArrayList<QuestionMulti> teacherQuestions = QuizUtils.getTeacherQuestions(teacher, subject); 
+        
+        System.out.print("\n\t---- Here are your Question/s ----\n ");
+
+        QuizUtils.displayQuestions(teacherQuestions); 
+
+        if (!teacherQuestions.isEmpty()) { 
+            System.out.print("\n(type any key to go back)\n");
+            System.out.print("Enter the number of the question to delete: ");
+
+            try {
+                int questionIndex = scanner.nextInt();
+                scanner.nextLine();
+
+                if (questionIndex > 0 && questionIndex <= teacherQuestions.size()) { 
+                    QuizUtils.removeQuestion(teacherQuestions.get(questionIndex - 1));
+                    System.out.println("\n\t**** Question deleted. ****"); 
+                } else {
+                    System.out.println("Invalid choice. Going back..."); 
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Going back..."); 
+                scanner.nextLine();
+            }
+        }
+    }
+```
+
+
+<br>
+<br>
 
 ### **Method Overriding** 🎡
   - `register(ArrayList<User> users)` : method is overriden in both `Student` and `Teacher`. Depending on the role that the current user chooses, they use this method to add the current user in the `users arraylist`.
+```java
+    @Override
+    public void register(ArrayList<User> users) { 
+      users.add(this);
+    }
+```
+
+<br>
+<br>
+    
   - `getRole()` : Method is overriden in both child classes. This returns a different role: `"Student"` for the student class and `"Teacher"` for the teacher class.
+###### Student.java
+```java
+    @Override
+    public String getRole() { return "Student"; }
+```
+###### Teacher.java
+```java
+    @Override
+    public String getRole() { return "Teacher"; }
+```
+
+<br>
+<br>
+    
   - `viewProfile()` : Overriden in both child classes. The base method displays general user profile information, and both subclasses enhance the behavior by adding specific information related to the `Student` or `Teacher` role.
+###### Student.java
+```java
+    @Override
+    public void viewProfile() {
+        super.viewProfile();
+        
+        // Display the scores for each subject the student has taken
+        for (int i = 0; i < getSubjects().size(); i++) {
+            String subject = getSubjects().get(i); 
+            int score = scores.get(i); 
+            System.out.println(subject + " Score: " + score);
+        }
+    }
+
+```
+###### Teacher.java
+```java
+    @Override
+    public void viewProfile() { 
+        super.viewProfile();
+    }
+```
+
+<br>
+<br>
+    
   - `displayRole()` : Both overriden in the child classes also. Displays the `role` depending by the chosen role of the current user.
+###### Student.java
+```java
+    @Override
+    public void displayRole() {
+        System.out.println("\n**** Student Role: Can take quizzes and view results. ****");
+    }
+```
+
+###### Teacher.java
+```java
+    @Override
+    public void displayRole() { 
+        System.out.println("\n**** Teacher Role: Manage own quizzes and view all questions. ****");
+    }
+```
 
 ---
     
