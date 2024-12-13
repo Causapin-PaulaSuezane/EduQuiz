@@ -85,7 +85,7 @@ EduQuiz is designed to make learning more accessible and engaging, ensuring that
 
 Encapsulation is achieved through organizing data and behavior in the form of private fields and public methods (getters and setters) for controlled access and integrity of data. Following methods are used to get or modify the private data fields:
 
-  - Used in the `User class`, `Student class`, and `Teacher class` with `priavte attributes` and `public getters and setter`.
+  - Used in the `User class`, `Student class`, and `Teacher class` with `private attributes` and `public getters and setter`.
     
   - Class `QuestionMulti` also uses `encapsulation` as it stores all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods `, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
     
@@ -139,7 +139,7 @@ Polymorphism is an object-oriented programming principle that allows objects of 
       - `removeQuestion()` : The removeQuestion methods work in tandem to delete questions. The interactive method `(removeQuestion(Teacher teacher, Scanner scanner)` allows teachers to browse through and pick out questions to remove at runtime, thus being user-friendly. While the method `(removeQuestion(QuestionMulti question)` actually deletes the question picked from the system in the background.
 
 ### **Method Overriding** 🎡
-  - `register(ArrayList<User> users)` : method is overriden in both `Student` and `Teacher`. Depending on the role that the current user chooses, they use this mrthod to add the current user in the `users arraylist`.
+  - `register(ArrayList<User> users)` : method is overriden in both `Student` and `Teacher`. Depending on the role that the current user chooses, they use this method to add the current user in the `users arraylist`.
   - `getRole()` : Method is overriden in both child classes. This returns a different role: `"Student"` for the student class and `"Teacher"` for the teacher class.
   - `viewProfile()` : Overriden in both child classes. The base method displays general user profile information, and both subclasses enhance the behavior by adding specific information related to the `Student` or `Teacher` role.
   - `displayRole()` : Both overriden in the child classes also. Displays the `role` depending by the chosen role of the current user.
