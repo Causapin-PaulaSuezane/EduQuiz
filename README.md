@@ -19,7 +19,7 @@
   <a href="#i-project-overview-">Overview</a> •
   <a href="#ii-oop-principles-">OOP Principles</a> •
   <a href="#iii-details-of-the-chosen-sdg-and-its-integration-">SDG Goal</a> •
-  <a href="#iv-how-to-run-">How To Run</a> •
+  <a href="######iv-how-to-run-">How To Run</a> •
   <a href="#important-notes-">Impotant Notes</a> 
 </p>
 
@@ -156,7 +156,7 @@ Here's how it integrates SDG 4📄✏️
 
 ---
 
-# IV. How To Run 🏃
+###### IV. How To Run 🏃
 
 ### What You'll Need 🧰
 - Visual Studio Code (VS Code)
