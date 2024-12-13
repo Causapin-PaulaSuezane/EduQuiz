@@ -15,7 +15,7 @@
  </p>
  
 <p align="center">
-  <a href="#features-">Features</a> •
+  <a href="######features-">Features</a> •
   <a href="#i-project-overview-">Overview</a> •
   <a href="#ii-oop-principles-">OOP Principles</a> •
   <a href="#iii-details-of-the-chosen-sdg-and-its-integration-">SDG Goal</a> •
@@ -29,8 +29,12 @@
 
 ---
 
-# Features ✨
-
+<h1 align="center">
+  <br>
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES.gif" alt="Features"></a>
+  
+  ###### Features ✨
+  
 * 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
 * 👨‍🏫 Teacher Functionality : Teachers can create, view, and edit quiz questions.
@@ -69,7 +73,7 @@ EduQuiz is designed to make learning more accessible and engaging, ensuring that
 
 # II. OOP Principles 🧑‍💻
 
-### 1. Encapsulation 🔐
+## 1. Encapsulation 🔐
 
 Encapsulation is achieved through organizing data and behavior in the form of private fields and public methods (getters and setters) for controlled access and integrity of data. Following methods are used to get or modify the private data fields:
 
@@ -77,11 +81,11 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
     
   - Class `QuestionMulti` also uses `encapsulation` as it stores all data and behaviors related to a multiple-choice question. By using `private fields` and `public methods `, it ensures that `questions`, `options`, and `answers` are managed securely and accessed only through controlled mechanisms.
     
-#### **Private Attributes** 🔒
+### **Private Attributes** 🔒
   - User details like `fullname`, `username`, `password`, `role` and `quiz data ` are declared as **private** in their respective classes, preventing unauthorized access or modification.
   - `Question Multi` class' private attributes are `question`, `optionA`, `optionB`, `optionC`, `optionD`, `correctAnswer`, `createdBy`, and `subject`.
     
-#### **Public Getters and Setter** 🌎
+### **Public Getters and Setter** 🌎
   - **User-Related Getters** 👩🏻‍💻
     - `getUsername()` : Retrieves the user's username.
     - `getPassword()` : Retrieves the user's password.
@@ -99,37 +103,42 @@ Encapsulation is achieved through organizing data and behavior in the form of pr
     - `getCorrectAnswer()` : Retrieves the correct answer for a quiz question.
     - `getCreatedBy()` : Retrieves the creator of a specific quiz question.
 
+---
 
-### 2. **Inheritance** 🌳 
+## 2. **Inheritance** 🌳 
 Inheritance is an object-oriented programming principle where a child class inherits attributes and methods from a parent class. This promotes code reuse and establishes a hierarchical relationship between classes. 
 
   - Used mainly in the `User class`, `Student class`, and `Teacher class` where `User` is the **parent class** and `Student` and `Teacher` are the child classes.
 
-#### **Parent Class (User)** 👵🏼
+### **Parent Class (User)** 👵🏼
   - `User` : common attributes like `username`, `password`, `fullname`, `subjects` were encapsulated in the parent class. These attributes represent shared properties that are inherited by specific user types, such as `Student` or `Teacher`, ensuring a consistent structure while allowing for specialized behavior in the child classes.
 
-#### **Child Classes (Student, Teacher)** 👶🏼
+### **Child Classes (Student, Teacher)** 👶🏼
   - `Student` : attributes like `username`, `password`, `fullname`, and `subjects`  were inherited from the parent class `User`. Additionaly, an attribute like `score` was introduced uniquely to the student chile class and not inherited from the parent class.
   - `Teacher` : same as the student's classes that were inherited from the parent class `User`.
+
+---
     
-### 3. **Polymorphism** 🔄
+## 3. **Polymorphism** 🔄
 Polymorphism is an object-oriented programming principle that allows objects of different types to be treated as objects of a common super type. The two main types of polymorphism are :
 
   - Compile-time Polymorphism (Method Overloading)
   - Runtime Polymorphism (Method Overriding)
 
-#### **Method Overloading** ⚡
+### **Method Overloading** ⚡
   - Methods like `addQuestion()` and `removeQuestion()` demonstrate method overloading. Each method name is used to edit the teacher-created questions with different parameter lists to handle different scenarios.
       - `addQuestion()` : supports adding pre-defined questions programmatically or interactively creating questions at runtime.
       - `removeQuestion()` : The removeQuestion methods work in tandem to delete questions. The interactive method `(removeQuestion(Teacher teacher, Scanner scanner)` allows teachers to browse through and pick out questions to remove at runtime, thus being user-friendly. While the method `(removeQuestion(QuestionMulti question)` actually deletes the question picked from the system in the background.
 
-#### **Method Overriding** 🎡
+### **Method Overriding** 🎡
   - `register(ArrayList<User> users)` : method is overriden in both `Student` and `Teacher`. Depending on the role that the current user chooses, they use this mrthod to add the current user in the `users arraylist`.
   - `getRole()` : Method is overriden in both child classes. This returns a different role: `"Student"` for the student class and `"Teacher"` for the teacher class.
   - `viewProfile()` : Overriden in both child classes. The base method displays general user profile information, and both subclasses enhance the behavior by adding specific information related to the `Student` or `Teacher` role.
   - `displayRole()` : Both overriden in the child classes also. Displays the `role` depending by the chosen role of the current user.
+
+---
     
-### 4. **Abstraction** 🖼
+## 4. **Abstraction** 🖼
 Abstraction is the concept of hiding implementation details and exposing only the essential features of an object. This is achieved using abstract classes or interfaces, allowing subclasses to define specific behaviors while maintaining a clear, simplified interface.
 
   - `User Class` : An abstract class that defines the structure for `register()`, `getRole()`, `displayRole()`, and `viewProfile()` methods, leaving the implementation details to the child classes.
