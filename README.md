@@ -30,10 +30,10 @@
 ---
 
 <h1 align="center">
-  <br>
   <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES.gif" alt="Features"></a>
-  
-  # Features ✨
+</h1>
+
+<h2 id="features-">✨ Features</h2>
   
 * 📝 Interactive Quizzes : Students can attempt multiple-choice quizzes in various subjects.
   
@@ -49,11 +49,12 @@
 
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(1).gif" alt="Project Overview"></a>
-  
 # I. Project Overview 🚀
+
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(1).gif" alt="Project Overview"></a>
+</h1>
+  
 
 EduQuiz📝 is a fun, interactive console-based quiz application designed to promote engaging and accessible learning for students. It aims to support both teachers and learners in a seamless and effective way. Here's an overview of the key features:
 
@@ -75,11 +76,11 @@ EduQuiz is designed to make learning more accessible and engaging, ensuring that
 
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(2).gif" alt="OOP Principles"></a>
-
 # II. OOP Principles 🧑‍💻
+
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(2).gif" alt="OOP Principles"></a>
+</h1>
 
 ## 1. Encapsulation 🔐
 
@@ -154,11 +155,11 @@ Abstraction is the concept of hiding implementation details and exposing only th
     
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(3).gif" alt="SDG Goals"></a>
-  
 # III. Details of the Chosen SDG and Its Integration 🌍
+
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(3).gif" alt="SDG Goals"></a>
+</h1>  
  
 The **EduQuiz** project supports **SDG 4: Quality Education** by providing an interactive venue for students to learn and take quizzes on a wide range of subjects. It continuously motivates learners to pursue self-assessment, which is a pillar in the development of education.
 
@@ -169,18 +170,18 @@ Here's how it integrates SDG 4📄✏️
 
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(4).gif" alt="How to Run"></a>
-
 # IV. How To Run 🏃
 
-### What You'll Need 🧰
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(4).gif" alt="How to Run"></a>
+</h1>
+
+### What You'll Need 🛠️
 - Visual Studio Code (VS Code)
 - Java Development Kit (JDK)
 - Java Extension Pack
 
-### Steps to Run the Program 📝
+### Steps to Run the Program 🖋
  1. Install Necessary Software
     - Download and install [VS Code](https://code.visualstudio.com/).
     - Install the latest JDK from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html) or [OpenJDK](https://openjdk.org/).
@@ -240,11 +241,13 @@ Here's how it integrates SDG 4📄✏️
      
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(5).gif" alt="File Structure"></a>
-
 # File Structures 📂
+
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(5).gif" alt="File Structure"></a>
+</h1>
+
+
 ## For EduQuiz (OOP) 🧩
 ```
 EduQuiz/ 
@@ -307,12 +310,12 @@ DBMS Project/
 
 ---
 
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(6).gif" alt="Important Notes"></a>
-  
 # Important Notes 📜
 
+<h1 align="center">
+  <a><img src="https://github.com/Causapin-PaulaSuezane/practice-repo-main/blob/main/FEATURES%20(6).gif" alt="Important Notes"></a>
+</h1>
+  
 ## For OOP 📌
 🎬**Video Presentation** is 10:02 long🕦 <br>
 🔗Link : [OOP Presentation Video](https://drive.google.com/file/d/1C6M1lvVm8K8vPzmlhlPA11QPynf4luhh/view?usp=drive_link)
