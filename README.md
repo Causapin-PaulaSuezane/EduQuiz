@@ -1,9 +1,6 @@
 
 <h1 align="center">
   <br>
-  <a><img src="
-<h1 align="center">
-  <br>
   <a><img src="https://github.com/Causapin-PaulaSuezane/EduQuiz/blob/main/EduQuiz%20logo.png" alt="EduQuiz"></a>
   <br>
   EduQuiz📝
